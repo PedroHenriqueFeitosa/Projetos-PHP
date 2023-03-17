@@ -14,10 +14,10 @@
             </h1>
 <p>
             <?php 
-            $Num=$_REQUEST["Num"] ?? 0;
-            $a=$Num-1;
-            $s=$Num+1;
-            echo "O Numero Escolhido foi $Num";
+            $N=$_REQUEST["Num"] ?? 0;
+            $a=$N-1;
+            $s=$N+1;
+            echo "O Numero Escolhido foi $N";
             echo "O valor do Antecessor $a";
             echo "O valor do Sucessor $s";
               ?>
