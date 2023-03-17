@@ -12,7 +12,7 @@
         <h1>
             Resultado Final
             </h1>
-
+<p>
             <?php 
             $Num=$_REQUEST["Num"] ?? 0;
             $a=$Num-1;
@@ -20,7 +20,8 @@
             echo "O Numero Escolhido foi $Num";
             echo "O valor do Antecessor $a";
             echo "O valor do Sucessor $s";
-            ?>
+              ?>
+            </p>
             <p><a href="javascript:history.go(-1)">Voltar Para A Página Anterior</a></p>
         </main>
 </body>
