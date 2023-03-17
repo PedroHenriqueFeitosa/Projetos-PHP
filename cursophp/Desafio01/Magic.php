@@ -8,19 +8,18 @@
     <title>Antecessor E Sucessor</title>
 </head>
 <body>
-    <header>
+    <main>
         <h1>
             Resultado Final
             </h1>
-            </header> 
-            <main>
-            <?php 
-            $um_numero=$_GET["Numero"];
-            $antecessor=$um_numero-1;
-            $sucessor=$um_numero+1;
-            echo "o valor do Antecessor:". $antecessor ."<br>/>n";
-            echo "o valor do Sucessor:".$sucessor . "<br>/n";
 
+            <?php 
+            $Num=$_REQUEST["Num"] ?? 0;
+            $a=$Num-1;
+            $s=$Num+1;
+            echo "O Numero Escolhido foi $Num";
+            echo "O valor do Antecessor $a";
+            echo "O valor do Sucessor $s";
             ?>
             <p><a href="javascript:history.go(-1)">Voltar Para A Página Anterior</a></p>
         </main>
