@@ -18,7 +18,7 @@
         $num=mt_rand($min,$max);
         echo "<p>Gerando um numero aleatorio entre $min e $max... <br> O Valor Gerado foi <storng>$num</strong></p>"
         ?>
-        <button onclick="javasrcipt:document.location.reload()">"&x1F504";De Novo </button>
+        <button onclick="javasrcipt:document.location.reload()"&x1F504;De Novo </button>
     </main>
 </body>
 </html>
