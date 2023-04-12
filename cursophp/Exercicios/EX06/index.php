@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contas</title>
+    <title>Exercicio PHP</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <h1>
     <?php 
-    $r=4;
-    $s=5;
-    $h=45;
-    //echo $r/$h+$s**$h;
-    echo $r/$s-$h;
-    //echo $h+$s-$h/$r;
+    $valor1=$_GET['v1']??0;
+    $valor2=$_GET['v2']??0;
     
-
     ?>
- </h1>   
+    <main>
+        <h1>Somador De Valores</h1>
+        <form action="<?=$_SERVER ['PHP_SELF']?>"method="get">
+         <label for="v1">Valor 1</label>
+         <input type="number" name="v1" id="v1" value="<?=$valor1?>">
+         <label for="v2">Valor 2</label>
+         <input type="number" name="v2" id="v2" value="<?=$valor2?>">
+         <input type="submit" value="Somar">   
+        </form>
+    </main>
+    <section id=Resultado>
+    <h2>Resultado Da Soma</h2>
+    <?php 
+    $soma=$valor1+$valor2;
+    print "<p>A Soma Entre $valor1 e $valor2 é igual a <strong>$soma</strong>.</p>";
+    ?>
+    </section>
 </body>
 </html>
